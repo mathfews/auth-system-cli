@@ -1,7 +1,7 @@
 class Auth:
     def __init__(self):
         self.database = {}
-    def register(self,email, username, password):
+    def register(self,email,username, password):
         if email not in self.database.keys():
             self.database[email] = {"username": username, "password": password}
             return "* Usuário cadastrado com sucesso!"
@@ -15,3 +15,6 @@ class Auth:
                 return "* Acesso negado!"
         else:
             return "* Usuário não cadastrado!"
+    def list_emails(self):
+        for email in self.database.keys():
+            print(f"* {email}")
