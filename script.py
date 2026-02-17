@@ -2,13 +2,12 @@ import json
 from pathlib import Path
 directory = Path(__file__).resolve().parent
 file_path = directory / "database.json"
-
 class Auth:
     def __init__(self):
         try:
             with open(file_path,"r", encoding="utf-8") as arq:
                 self.database = json.load(arq)
-        except json.JSONDecodeError:
+        except (json.JSONDecodeError, FileNotFoundError):
             self.database = {}
     def register(self,email,username, password):
         if email not in self.database.keys():
