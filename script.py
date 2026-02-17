@@ -5,11 +5,11 @@ file_path = directory / "database.json"
 
 class Auth:
     def __init__(self):
-        if not file_path.exists() == False:
-            self.database = {}
-        else:
+        try:
             with open(file_path,"r", encoding="utf-8") as arq:
                 self.database = json.load(arq)
+        except json.JSONDecodeError:
+            self.database = {}
     def register(self,email,username, password):
         if email not in self.database.keys():
             self.database[email] = {"username": username, "password": password}
@@ -29,3 +29,4 @@ class Auth:
     def list_emails(self):
         for email in self.database.keys():
             print(f"* {email}")
+auth = Auth() 
