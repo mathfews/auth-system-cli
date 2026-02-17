@@ -1,3 +1,4 @@
+import os
 from auth import Auth
 auth = Auth()
 def clean_terminal():
