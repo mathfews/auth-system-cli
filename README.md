@@ -18,7 +18,6 @@ This project was built to practice backend logic, data persistence, and system s
 ---
 
 ## ✨ Features
-
 - User registration
 - Secure login system
 - Deposit funds
@@ -29,7 +28,6 @@ This project was built to practice backend logic, data persistence, and system s
 ---
 
 ## 🛠 Technologies
-
 - Python 3
 - JSON
 - hashlib (SHA-256)
