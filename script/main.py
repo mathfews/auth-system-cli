@@ -9,14 +9,16 @@ while True:
     if userInput == "login" or userInput == "1":
         clean_terminal()
         while True:
+            clean_terminal()
             email = input("> Enter your email(Enter 0 to return): ").strip()
             if email == "0":
                 clean_terminal()
                 break
             password = input("> Enter your password: ").strip()
             result = auth.login(email,password)
-            auth.show_login_results(email, password)
-            if result == True:
+            print(result[1])
+            input("")
+            if result[0] == True:
                 exit()
     elif userInput == "register" or userInput == "2":
         while True:
@@ -28,7 +30,8 @@ while True:
             username = input("> Enter your username: ").strip()
             password = input("> Enter your password: ").strip()
             result = auth.register(email,username, password)
-            auth.show_register_results(email)
-            if result == True:
-                clean_terminal()
+            print(result[1])
+            if result[0] == True:
+                input("Press enter to return to menu")
                 break
+            input("")
