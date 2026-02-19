@@ -1,29 +1,26 @@
-# BankStack - Terminal Banking System in Python
-BankStack is a terminal-based banking system developed in Python to simulate core backend operations such as authentication, deposits, withdrawals, and transfers, with persistent data storage.
+# Auth System CLI – Python Authentication System
+Auth System CLI is a terminal-based authentication system developed in Python.
+It handles user registration and login with secure password hashing and persistent storage.
 
-This project was built to practice backend logic, data persistence, and system structure design.
+This project was built to practice authentication logic, password security, and structured backend design.
 
 ---
 
 ## 🚀 What This Project Demonstrates
-
 - Object-Oriented Programming (OOP)
-- File handling and persistent storage with JSON
-- Password hashing using SHA-256
+- Secure password hashing using SHA-256
+- User authentication logic
 - Input validation and error handling
-- Financial transaction logic implementation
-- Clean and modular code structure
-- Separation of concerns and organized project structure
+- Persistent data storage with JSON
+- Separation of concerns and modular code structure
 
 ---
 
 ## ✨ Features
 - User registration
 - Secure login system
-- Deposit funds
-- Withdraw funds
-- Transfer money between users
-- Persistent data storage using a JSON-based database
+- Password hashing (SHA-256)
+- Persistent user database using JSON
 
 ---
 
@@ -42,12 +39,12 @@ This project was built to practice backend logic, data persistence, and system s
 ---
 
 ## 📈 Future Improvements
+- Add password strength validation
+- Implement account lock after multiple failed attempts
 - Migrate from JSON to SQLite
-- Add transaction history
-- Create a graphical or web interface
-- Implement unit tests
+- Add unit tests
 
 ---
 
 ## 📚 Learning Outcome
-Through this project, I strengthened my understanding of backend system design, data persistence strategies, and secure password handling. It also enhanced my ability to structure modular and maintainable small-scale applications.
+Through this project, I strengthened my understanding of authentication systems, password security, and backend structure organization. It also improved my ability to design simple but secure user management logic.
